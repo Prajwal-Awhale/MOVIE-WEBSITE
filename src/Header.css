@@ -1,0 +1,93 @@
+.App{
+   text-align: center;
+   min-height: 100vh;
+}
+.Header{
+    background-color: rgb(39, 37, 37);
+    color: aliceblue;
+    box-shadow: 10px 16px 23px 0px rgba(90, 89, 89, 0.75);
+-webkit-box-shadow: 10px 16px 23px 0px rgba(58, 57, 57, 0.75);
+-moz-box-shadow: 10px 16px 23px 0px rgba(105, 102, 102, 0.75);
+
+}
+h1{
+    margin: 0%;
+    padding: 1.5rem;
+}
+.movie{
+   display: flex;
+   flex-direction: column;
+justify-content: center;
+    background-color: grey;
+    width: 10%;
+    height:99%;
+    font-weight: bold;
+    border-radius: 1.2rem;
+    box-shadow: -1px 6px 41px -11px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 6px 41px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 6px 41px -11px rgba(0,0,0,0.75);
+transition: 0.3s ;
+}
+
+    .movie p{
+margin: 0.2rem;
+    }
+
+.movie:hover{
+        transform: scale(1.2);
+    z-index: 2;
+    
+}
+
+
+.Main{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+ margin-top:3rem ;
+ margin-bottom: 2rem;
+ gap: 5rem;
+
+
+    }
+.movie img{
+        border-top-left-radius: 1.2rem; 
+        border-top-right-radius: 1.2rem;
+        width: 100%;
+
+  }
+
+
+
+
+    @media (max-width : 500px)
+    {
+        .Main{
+background-color: rgb(173, 168, 168);
+        }
+        .movie{
+              width: 64vw;
+                }
+ }
+
+ @media (max-width :1050px) and (min-width:500px)
+ {
+     .movie{
+           width: 30vw;
+             }
+}    
+           
+@media  (min-width:1050px)
+{
+    .movie{
+          width: 12vw;
+            }
+}   
+      
+ .footer{
+    background-color: rgb(39, 37, 37);
+    color: white;
+    padding: 1.5rem;
+ }   
+
+
